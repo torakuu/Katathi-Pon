@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>かたちぽん</title>
+  <link rel="stylesheet" href="main.css"/>
+
+  <style>
+     .my-popup{
+          border-radius: 20;
+     }
+
+     .my-popup-title{
+          font-size: 16;
+          font-weight: normal;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+     }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+ <header>
+  <h1>かたちぽん</h1>
+   <button id="login-btn">ログイン</button>
+</header>
+
+<main>
+     <section class="create-section">
+        <div class="main-visual">
+          <p class="catchphrase">アイデアがほしいあなたに。<br>図形からラフイラスト生成。</p>
+             <div class="button-container">
+             <button id="create-button">つくってみる</button>
+          <p>ランダムな図形からひらめきのアイデアを。</p>
+        </div>
+      </div>
+     </section>
+
+     <section class="canvas-container" id="canvas-container">
+      <canvas id="shape-canvas" width="800" height="500"></canvas>
+      <div class="buttons">
+           <button id="regenerate-button" style="display: none;">再生成</button>
+           <button id="idea-button" style="display: none;">ラフ提案</button>
+           <button id="save-button">保存する</button>
+      </div>
+   </section>
+
+ <section class="explanation">
+    <h2>かたちぽんとは？</h2>
+    <div class="explanation-content">
+         <div class="text">
+              <p>「かたちぽん」は、ランダムな図形配置からイラストのアイデアを広げていく創作支援ツールです。</p>
+                  <p>アイデア力を鍛えたい人 → 図形からひらめきを得る</p>
+                  <!--　画像挿入　-->
+
+
+
+
+                  <p>アイデアが浮かばない人 → 図形をもとに生成されたラフイラストで創作のきっかけを掴む</p>
+                  <!--　画像挿入　-->
+
+         </div>
+
+         <div class="illustration">
+              <!--　ここにイラストを挿入する　-->
+         </div>
+    </div>
+ </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
